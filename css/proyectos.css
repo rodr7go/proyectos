@@ -5,26 +5,42 @@ body {
   background: linear-gradient(#cd5c5c, #eb5e66, #b22222);
 }
 .uno {
-  margin: 2em 2em;
-  width: 300px;
-  height: 150px;
   background: linear-gradient(#00008b, #00009c, #003eff);
-  transition: all 0.4s linear;
+  height: 150px;
+  margin: 2em 2em;
   position: absolute;
+  transition: all 0.4s linear;
+  width: 300px;
 }
 .uno:hover {
   margin: 1em 2em;
 }
 .uno:after {
-  content: '';
-  transition: all 0.5s;
-  bottom: -25px;
   border-radius: 50%;
+  bottom: -25px;
+  content: '';
   margin: 0 0.5em;
+  transition: all 0.5s;
 }
 .uno:hover:after {
-  width: 290px;
-  height: 20px;
   background: rgba(0,0,0,0.3);
+  height: 20px;
   position: absolute;
+  width: 290px;
+}
+.dos {
+  background-image: url("http://images.forwallpaper.com/files/images/6/61cc/61ccb4ce/776256/night-city-wallpaper-blurry-cityscape-rain-unsharp-blurred.jpg");
+  background-size: cover;
+  border: 10px double #0ff;
+  border-radius: 50%;
+  display: inline-block;
+  height: 200px;
+  left: 30%;
+  margin: 1em 0;
+  position: relative;
+  transition: all 0.5s;
+  width: 200px;
+}
+.dos:hover {
+  border-radius: inherit;
 }
