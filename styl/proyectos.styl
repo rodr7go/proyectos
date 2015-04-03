@@ -1,7 +1,12 @@
 html
 	height 100%
 body
-	background linear-gradient(indianred, #EB5E66, firebrick)
+	// background linear-gradient(indianred, #EB5E66, firebrick)
+	background black
+	transition all 2s linear
+	
+	&:hover
+		background #eee
 	
 .uno
 	background linear-gradient(darkblue, #00009C, #003EFF)
@@ -23,7 +28,7 @@ body
 		transition all .5s
 		
 	&:hover:after
-		background rgba(black, .3)
+		background rgba(white, .3)
 		height 20px
 		position absolute
 		width 290px
@@ -64,3 +69,25 @@ body
 		height 60px
 		position absolute
 		box-shadow 3px 3px 3px 2px rgba(black .6)
+
+.cuatro
+	width 5px
+	height 5px
+	background white
+	border-radius 50%
+	// box-shadow 0 0 0 4px rgba(cyan .5)
+	position relative
+	left 70%
+	top -200px
+	-webkit-animation estrella 6s infinite linear
+	
+@-webkit-keyframes estrella
+	0%
+		// top 200px
+		// left 400px
+		box-shadow 0 0 0 5px red
+
+	100%
+		top 200px
+		left 400px
+		box-shadow 0 0 0 5px cyan

@@ -2,7 +2,11 @@ html {
   height: 100%;
 }
 body {
-  background: linear-gradient(#cd5c5c, #eb5e66, #b22222);
+  background: #000;
+  transition: all 2s linear;
+}
+body:hover {
+  background: #eee;
 }
 .uno {
   background: linear-gradient(#00008b, #00009c, #003eff);
@@ -24,7 +28,7 @@ body {
   transition: all 0.5s;
 }
 .uno:hover:after {
-  background: rgba(0,0,0,0.3);
+  background: rgba(255,255,255,0.3);
   height: 20px;
   position: absolute;
   width: 290px;
@@ -64,4 +68,24 @@ body {
   height: 60px;
   position: absolute;
   box-shadow: 3px 3px 3px 2px rgba(0,0,0,0.6);
+}
+.cuatro {
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: 70%;
+  top: -200px;
+  -webkit-animation: estrella 6s infinite linear;
+}
+@-webkit-keyframes estrella {
+  0% {
+    box-shadow: 0 0 0 5px #f00;
+  }
+  100% {
+    top: 200px;
+    left: 400px;
+    box-shadow: 0 0 0 5px #0ff;
+  }
 }
