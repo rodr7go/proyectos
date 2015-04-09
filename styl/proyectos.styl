@@ -5,9 +5,6 @@ body
 	background black
 	transition all 2s linear
 	
-	&:hover
-		background #eee
-	
 .uno
 	background linear-gradient(darkblue, #00009C, #003EFF)
 	height 150px
@@ -80,7 +77,63 @@ body
 	left 70%
 	top -200px
 	-webkit-animation estrella 6s infinite linear
+
+.filter
+	width 100%
+	margin 0
+	padding 0
+
+	.filter-item
+		width 45%
+		display inline-block
+		margin 2em 0
+		
+		
+		img
+			display inline-block
+			width 100%
+			-webkit-filter grayscale(.9) blur(3px)
 	
+			&:last-child
+				bottom 385px
+				left 105%
+				position relative
+				-webkit-filter inherit
+
+.animation
+	top -380px
+	position relative
+	width 60%
+	-webkit-animation animacion 6s infinite linear
+	
+	img
+		width 100%
+@-webkit-keyframes animacion
+	0%
+		// transition all 1s linear
+		-webkit-transform rotate(360deg)
+		-webkit-filter grayscale(.4)
+	20%
+		-webkit-transform none
+		-webkit-filter grayscale(.7)
+	30%
+		-webkit-filter grayscale(.8)
+	40%
+		-webkit-filter grayscale(.9)
+	50%
+		-webkit-filter grayscale(1)
+	60%
+		-webkit-filter sepia(80%)
+	70%
+		-webkit-filter blur(3px)
+	80%
+		-webkit-filter blur(3px)
+	90%
+		-webkit-filter blur(3px)
+	100%
+		-webkit-filter blur(3px)
+	
+		
 @-webkit-keyframes estrella
 	0%
 		// top 200px
